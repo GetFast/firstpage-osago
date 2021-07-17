@@ -1,6 +1,21 @@
 @font-face {
 	font-family: 'Casper';
-	src: url('C:/Users/lion1/OneDrive/Desktop/OSAGO/fonts/Casper.ttf') format('truetype');
+	src: url('./fonts/Casper.ttf') format('truetype');
+}
+
+body {
+    margin: 0px;
+    font-family: 'Casper';
+    color: #fff;
+    /* background: linear-gradient(180deg, #038661 10%, #FDB215 100%) fixed; */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+    background: #038661;
 }
 
 .menu {
@@ -17,49 +32,23 @@
     border: 0;
     border-radius: 5px;
     color: rgb(255, 255, 255);
-    position: absolute;
-    left: 1500px; 
-    top: 20px;
     font-size:16px;
+    cursor: pointer;
 }
 
-.fonts {
-    font-family: 'Casper';
-    color: #fff;
+.ancor-wrapper {
+    display: flex;
 }
 
-.ssilka1 {
-    position: absolute;
-    text-decoration: none;
-    color: #fff;
-    width: 156px;
-    height: 24px;
-    font-size: 16px;
-    line-height: 23px;
-    left: 600px;
-    top: 20px;
-}
-
-.ssilka2 {
-    position: absolute;
-    text-decoration: none;
-    color: #fff;
-    width: 156px;
-    height: 24px;
-    font-size: 16px;
-    line-height: 23px;
-    left: 850px;
-    top: 20px;
-}
-
-.ssilka3 {
-    position: absolute;
+.ancor {
+    margin-right: 36px;
     text-decoration: none;
     color: #fff;
     font-size: 16px;
     line-height: 23px;
-    left: 1050px;
-    top: 20px;
+}
+.ancor:last-child {
+    margin-right: 0;
 }
 
 .main-block {
@@ -74,12 +63,6 @@
     top: 100px;
     font-size: 30px;
     color: black;
-}
-
-.img-osago {
-    position: absolute;
-    left: 300px;
-    top: 20px;
 }
 
 .p1{
@@ -184,23 +167,26 @@
     left: 300px;
 }
 
-.password, .login {
+.base-input {
     font-family: Casper;
     position: absolute;
     width: 364px;
     height: 42px;
+    padding: 0 16px;
+    font-size: 16px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.38);
     box-sizing: border-box;
     border-radius: 6px;
+    outline: none;
 }
 
-.login {
+#login {
     top: 370px;
     left: 195px;
 }
 
-.password {
+#password {
     top: 470px;
     left: 195px;
 }
@@ -256,6 +242,8 @@
     background: #038661;
     border-radius: 5px;
     color: white;
+    border: 0;
+    cursor: pointer;
 }
 
 .reboot-password {
